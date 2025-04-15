@@ -1,0 +1,229 @@
+@font-face {
+    font-family:a;
+    src: url(/assets/NBInternationalProBoo.ttf);
+
+}
+@font-face {
+    font-family: b;
+    src: url(/assets/Rejouice-Headline.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* user-select: none; */
+}
+.page-1{
+height: 100vh;
+width: 100%;
+/* background-color: aqua; */
+position: relative;
+}
+.page-1 video{
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+.page-1-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 5vw; */
+    z-index: 6;
+}
+nav{
+    user-select: none;
+    display: flex;
+    color: aliceblue;
+    /* background-color: azure; */
+    justify-content: space-between;
+    align-items:center;
+    padding: 2.9vw 2.7vw;
+    font-weight: 100;
+    width: 100%;
+    font-family:a  ;
+}
+.top-left{
+    font-weight: 10;
+    font-size: 1.4vw;
+}
+.menu{
+    font-weight: 1000000;
+    font-size: 1.4vw;
+}
+.page-1-content h1{
+    line-height: 30vw;
+}
+.rejouice{
+    user-select: none;
+    font-family: b;
+    color: aliceblue;
+    font-size: 27vw;
+    font-weight: 100;
+    /* line-height: 0vw; */
+}
+.cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    position: absolute;
+    z-index: 5;
+    background-color: #EA5733;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: a;
+    font-weight: 500;
+    transform: translate(-50%,-50%)
+}
+.page-2{
+    height: 100vh;
+    width: 100%;
+    background-color: #FAF8F3;
+    position: relative;
+    z-index: 1;
+}
+/* .page-2-top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px #000;
+}
+.page-2-top h3{
+    font-size: 1.7vh;
+    font-weight: 500;
+    width: 26%;
+    background-color: #EA5733;
+
+} */
+.page-2{
+    display: flex;
+    flex-direction: column;
+}
+.page-2-content{
+    display:flex ;
+    justify-content: space-between;
+    align-items: last baseline;
+    padding-top: 5.4vw;
+    padding-inline: 2.7vw;
+    user-select: none;
+}
+.left,.right{
+    font-family: a;
+    font-weight: 100;
+    font-size: 1.7vw;
+    
+}
+.sep{
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+.sep-in{
+   top: 21.2%; 
+   width: 94.2%;
+   height: 0.1vh;
+   background-color: rgb(154, 151, 151);
+   position: absolute;
+   padding-left: 10vw;
+   opacity: 90%;
+}
+.main-content{
+    padding-top:5vh;
+    padding-inline: 2.7vw 2.7vw;
+    font-size: 66px;
+    font-weight: 400;
+    font-family: a;
+    line-height: 71px;
+}
+.page-3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FAF8F3;
+    position: relative;
+    padding: 3vw;
+}
+.page-3-top{
+    font-family: a;
+    text-align: center;
+    padding-top: 5.7vw;
+}
+.alu{
+    margin-bottom: 1vw;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.models{
+    background-color: black;
+    font-size: 0.7vw;
+    color: #FAF8F3;
+    padding: 3px 6px;
+    border-radius: 9px;
+}
+.bold{
+    font-size: 66px;
+    font-weight: 400;
+    line-height: 71px;
+}
+.page-3-bottom{
+    /* background-color: #EA5733; */
+    margin-top: 35vh;
+   
+}
+.bottom-text{
+    display: flex;
+    justify-content: space-between;
+    font-family: a;
+}
+.bottom{
+    font-weight: 100;
+}
+.main-box{
+    /* background-color: black; */
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.8vh;
+}
+.box {
+    /* background-color: ; */
+    height: 100%;
+    width: 32.7%;
+    position: relative;
+
+}
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: ease-in-out 0.3s;
+}
+.box:hover img {
+    opacity: 0;
+    cursor: crosshair;
+}
+.box:hover video{
+    cursor: pointer;
+}
